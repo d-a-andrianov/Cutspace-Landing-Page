@@ -1,0 +1,49 @@
+// в этом файле сбрасываем стандартные стили
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    // отключаем стандартные отступы
+}
+
+a {
+    color: inherit;
+    // наследовать основной цвет
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    // наследуй всё от родителя
+}
+
+input, button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    // наследуй всё от родителя
+}
+
+button, input[type="submit"] {
+    background: none;
+    cursor: pointer;
+    // стиль курсора: рука
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+ul, li {
+    list-style: none;
+    // убрать маркеры
+}
+
+img {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    // картинка отмасштабируется по размеру контейнера, не будет вылезать за него 
+}

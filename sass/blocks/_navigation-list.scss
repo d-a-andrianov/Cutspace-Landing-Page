@@ -1,0 +1,23 @@
+.navigation-list {
+    ul {
+        display: flex;
+    }
+
+    li:not(:last-child) {
+        margin-right: 42px;
+    }
+
+    a {
+        &:hover {
+            // добавляем доп стили к тегу a, чтобы не писать лишние строки
+            color: $accent-color;
+            // прописано в vars.scss
+        }
+
+        &.active {
+            color: $accent-color;
+            // прописано в vars.scss
+            font-weight: 700;
+        }
+    }
+}

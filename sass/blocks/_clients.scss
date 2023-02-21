@@ -1,0 +1,12 @@
+.clients {
+    padding-top: 100px;
+    padding-bottom: 45px;
+    // вроде можно и марджинами, но препод делал так
+ }
+
+
+ .clients__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

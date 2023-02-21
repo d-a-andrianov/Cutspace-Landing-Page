@@ -1,0 +1,24 @@
+// стиль кнопки
+
+.button {
+    display: inline-block;
+    height: 58px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 29px;
+    background-color: $accent-color;
+    // $accent-color задан в vars.scss
+
+
+    line-height: 58px;
+    // делаем для того, чтобы надпись всегда была по центру кнопки
+    font-weight: 700;
+    color: #FFFFFF;
+    transition: background-color 0.2s ease-in;
+    // плавный переход цвета за 0.2 sec
+    
+    &:hover {
+        background-color: $accent-color-hover;
+        // при наведении берем цвет из переменной $accent-color-hover
+    }
+}

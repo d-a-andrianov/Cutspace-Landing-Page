@@ -1,0 +1,53 @@
+.objects {
+    padding-top: 45px;
+    padding-bottom: 80px;
+
+ }
+
+.objects__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    // чтобы при масштабировнии уходило за левый край и не было скрола
+
+    // медиазапрос для десктопа, до размера (меньше чем) 1495 будет justify-content: flex-end;
+    @media (max-width: 1495px) {
+        justify-content: flex-end;
+        // делаем, что ряд всегда показывает полностью конец ряда
+        
+    }
+
+ }
+
+.objects__img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+ }
+
+.objects__text {
+    // max-width: 693px;
+    width: 374px;
+    padding-left: 181px;
+    padding-right: 150px;
+    box-sizing: content-box;
+
+    // не дает тексту уменьшаться
+    flex-shrink: 0;
+
+    p + p {
+        margin-top: 20px;
+        // если тегов p больше чем 2, то стиль будет работать
+    }
+
+ }
+
+.objects__title {
+    margin-bottom: 20px;
+ }
+
+.objects__button {
+    margin-top: 40px;
+}

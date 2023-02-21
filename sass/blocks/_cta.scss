@@ -1,0 +1,47 @@
+.cta {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.cta__block { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 95px;
+
+    border-radius: 20px;
+    background-color: #58BEBF;
+    color: #fff;
+}
+
+.cta__img {
+    margin-top: 60px;
+    margin-right: 0px;
+    padding-top: 25px;
+    padding-right: 25px;
+    background-color: #fff;
+    border-radius: 0px 20px 0px 0px;
+
+}
+
+.cta__text {
+    width: 364px;
+
+    p {
+        width: 320px;
+    }
+
+
+}
+
+.cta__title {
+    margin-bottom: 15px;
+}
+
+.cta__buttons-row {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 16px;
+
+    // расстояние между колонками (кнопками)
+}

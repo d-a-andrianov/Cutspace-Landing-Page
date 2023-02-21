@@ -1,0 +1,29 @@
+.img-card {
+    position: relative;
+    // задаем, чтобы спозиционировать сверху белую карточку
+    width: 385px;
+    & + & {
+        margin-left: 32px;
+        // & + & фактически означает .img-card + .img-card
+    }
+
+
+}
+
+.img-card__img {
+    border-radius: 20px 20px 0px 20px;
+
+    .img-card--rounder & {
+        border-radius: 20px;
+        // доп стиль для скругления всех углов
+    }
+
+}
+
+.img-card__info {
+    // задаем отступы для карточки
+    // задаем, чтобы спозиционировать сверху белую карточку
+    position: absolute;
+    right: -46px;
+    bottom: 87px;
+}
